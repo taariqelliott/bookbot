@@ -7,7 +7,7 @@ def main():
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
-        
+
     bookpath = sys.argv[1]
     book_bot_title = "============ BOOKBOT ============"
     book_bot_path = "books/frankenstein.txt..."
@@ -19,7 +19,7 @@ def main():
         with open(bookpath) as f:
             bookstring = f.read()
     except:
-        print("no")
+        print("Not exactly")
 
     print(book_bot_title)
     print(f"Analyzing book found at {book_bot_path}")
